@@ -5,9 +5,9 @@ import WorkoutRecordsForm from './WorkoutRecordsForm';
 import WorkoutRecordsTable from './WorkoutRecordsTable';
 
 export interface WorkoutRecord {
-  readonly id: string;
-  date: string;
-  distance: number;
+  readonly id: string,
+  date: string,
+  distance: number
 }
 
 function WorkoutRecords() {
