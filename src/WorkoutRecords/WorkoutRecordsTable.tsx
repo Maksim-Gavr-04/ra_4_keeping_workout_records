@@ -20,18 +20,18 @@ function WorkoutRecordsTable({ records, onRecordEdit, onRecordDelete }: WorkoutR
         <tbody>
           { records.length
             ? records.map(r => (
-              <tr className='workout-records-table__item' key={ r.id }>
+              <tr className='workout-records-table__item' key={r.id}>
                 <td>{ r.date }</td>
                 <td>{ r.distance }</td>
                 <td className='workout-records-table__actions'>
-                  <button className='workout-records-table__edit' onClick={ () => onRecordEdit(r) }>✎</button>
-                  <button className='workout-records-table__delete' onClick={ () => onRecordDelete(r) }>✘</button>
+                  <button className='workout-records-table__edit' onClick={() => onRecordEdit(r)}>✎</button>
+                  <button className='workout-records-table__delete' onClick={() => onRecordDelete(r)}>✘</button>
                 </td>
               </tr>
             ))
             : (
               <tr className='workout-records-table__empty-item'>
-                <td colSpan={ 3 }>Нет данных о тренировках</td>
+                <td colSpan={3}>Нет данных о тренировках</td>
               </tr>
             )
           }

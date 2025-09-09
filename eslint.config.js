@@ -48,6 +48,7 @@ export default tsEslint.config([
       '@typescript-eslint/array-type': 'error',
       'react-refresh/only-export-components': [ 'warn', { allowConstantExport: true } ],
       'react/self-closing-comp': [ 'error', { component: true, html: true } ],
+      'react/jsx-curly-spacing': [ 2, 'never' ],
       'react-hooks/exhaustive-deps': 'error',
       'react/react-in-jsx-scope': 'off',
       'arrow-body-style': [ 'error', 'as-needed' ]

@@ -71,8 +71,8 @@ function WorkoutRecords() {
 
   return (
     <div className='workout-records'>
-      <WorkoutRecordsForm formData={ formData } setFormData={ setFormData } onFormSubmit={ onFormSubmit } />
-      <WorkoutRecordsTable records={ records } onRecordEdit={ onRecordEdit } onRecordDelete={ onRecordDelete } />
+      <WorkoutRecordsForm formData={formData} setFormData={setFormData} onFormSubmit={onFormSubmit} />
+      <WorkoutRecordsTable records={records} onRecordEdit={onRecordEdit} onRecordDelete={onRecordDelete} />
     </div>
   );
 }
